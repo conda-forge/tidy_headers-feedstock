@@ -1,6 +1,6 @@
 {% set name = "tidy_headers" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "a92cbcf39ec25c89ab952e2bc4cb3bc8ea039dee5c3ea95919e64a68061bc605" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "4858d9c689d9f4ba128a44d1da40bd073e4bc1d06f2b4fd79442330cd8f42278" %}
 
 package:
   name: {{ name|lower }}
@@ -19,6 +19,7 @@ requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
   run:
     - python
     - numpy
