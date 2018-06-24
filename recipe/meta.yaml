@@ -1,6 +1,6 @@
 {% set name = "tidy_headers" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "4858d9c689d9f4ba128a44d1da40bd073e4bc1d06f2b4fd79442330cd8f42278" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "61db49036130680f116c25c7949b4ae2bdcf173233c9dfa6e15bf3ab57466838" %}
 
 package:
   name: {{ name|lower }}
@@ -13,11 +13,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
+    - pip
     - setuptools
     - pytest-runner
   run:
