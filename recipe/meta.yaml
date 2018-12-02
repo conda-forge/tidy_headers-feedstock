@@ -1,6 +1,6 @@
 {% set name = "tidy_headers" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "61db49036130680f116c25c7949b4ae2bdcf173233c9dfa6e15bf3ab57466838" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "d5970a61a82f1b30683e96f1c67f35ae827c8259dbcc94c3018dfb78caee7c6f" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   home: https://github.com/untzag/tidy_headers
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: "Easy headers, inspired by the tidy data specification." 
 
 extra:
