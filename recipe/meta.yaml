@@ -1,6 +1,6 @@
 {% set name = "tidy_headers" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "61db49036130680f116c25c7949b4ae2bdcf173233c9dfa6e15bf3ab57466838" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "cf2518d12b973768b272a8d539c4a52ba7e452b023f0576249dd6013c8fe94e7" %}
 
 package:
   name: {{ name|lower }}
