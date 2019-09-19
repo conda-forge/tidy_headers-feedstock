@@ -1,6 +1,6 @@
 {% set name = "tidy_headers" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "d5970a61a82f1b30683e96f1c67f35ae827c8259dbcc94c3018dfb78caee7c6f" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "152fe1e35046e10c2ffafdeba103e093edf91d721cb196e38c13964226da94ad" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
