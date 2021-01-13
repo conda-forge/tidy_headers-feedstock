@@ -1,6 +1,6 @@
 {% set name = "tidy_headers" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "152fe1e35046e10c2ffafdeba103e093edf91d721cb196e38c13964226da94ad" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "82bd39752c9eb171708619c5affbcfd86a82bab801b42e167eba53812dc75c82" %}
 
 package:
   name: {{ name|lower }}
@@ -11,18 +11,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
-    - setuptools
-    - pytest-runner
+    - flit
+    - numpy
   run:
-    - python
+    - python >=3.6
     - numpy
 
 test:
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "Easy headers, inspired by the tidy data specification." 
+  summary: Easy headers, inspired by the tidy data specification.
 
 extra:
   recipe-maintainers:
