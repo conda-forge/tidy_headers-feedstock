@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >= 3.6
     - pip
-    - setuptools
-    - pytest-runner
+    - flit
+    - numpy
   run:
-    - python
+    - python >= 3.6
     - numpy
 
 test:
