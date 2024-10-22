@@ -20,6 +20,7 @@ requirements:
     - python >=3.9
     - flit-core >=2,<4
     - pip
+    - numpy
   run:
     - python >=3.9
     - numpy
