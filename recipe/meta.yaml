@@ -11,18 +11,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
+    - flit-core >=2,<4
     - pip
-    - flit
     - numpy
   run:
-    - python >=3.6
+    - python >=3.9
     - numpy
 
 test:
